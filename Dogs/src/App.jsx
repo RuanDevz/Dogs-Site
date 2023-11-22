@@ -2,8 +2,8 @@ import React from 'react'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Header from './Componentes/Header'
 import Footer from './Componentes/Footer'
-import Home from './Componentes/Home'
 import Login from './Componentes/Login/Login'
+import Main from './Componentes/Main'
 
 const App = () => {
   return (
@@ -11,9 +11,9 @@ const App = () => {
       <Router>
       <Header />
         <Routes>
-          <Route path='/' element={<Home />}></Route>
           <Route path='/login' element={<Login />}></Route>
         </Routes>
+        <Main />
         <Footer />
       </Router>
     </div>
